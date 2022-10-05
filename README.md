@@ -9,7 +9,7 @@ To make this little project become reality,you need to:
 
 ### Folders 📁
 - main 
-> This is the name of the app and also where the most of things that used for controlling it take >place
+> This is the name of the app and also where the most of things that used for controlling the app take place
 
 - static/main
 > This is the folder where every css file will be storaged.In the meanwhile it is better 
