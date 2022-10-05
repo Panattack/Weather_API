@@ -32,7 +32,7 @@ The `urlpatterns` list routes URLs to views
 2. import settings from django.conf
 3. Import static from django.conf.urls.static
 4. Add `+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)` next to 'urlpatterns' list
-5. Append to the list the path that to the views.py that is goinf to render your website, with functions or classes, is your choice.
+5. Append to the list the path that to the views.py that is going to render your website, with functions or classes, is your choice.
 
 #### main
 - urls.py 🔗<br>
