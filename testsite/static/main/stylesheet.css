@@ -1,0 +1,122 @@
+body {
+  font-family: var(--font-roboto);
+  background-color: #212426;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+  margin:0 auto;
+  font-size: 3rem;
+  letter-spacing: 0.9px;
+  background: linear-gradient(
+    90deg,
+    rgba(249, 211, 180, 1) 0%,
+    rgba(249, 211, 180, 0) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+
+.container {
+  width: 300px;
+  margin:0 auto;
+  text-align: center;
+  background-color: #41ecb3;
+  height: 300px;
+  border-radius: 8px;
+  border:#00D8FF 8px solid;
+}
+
+.container:hover {
+  animation: pulsestop 1s ease-in-out;
+}
+
+@keyframes pulsestop {
+  0%{
+    box-shadow:
+    0 0 25px #5ddeff,
+    0 0 50px #4e004e
+  }
+}
+
+.data_info {
+  text-align: left;
+}
+
+.data_info li {
+  margin:7px 0;
+}
+
+.img_container {
+  margin:auto;
+  width: 300px;
+  background-color: azure;
+  border-radius: 12px;
+  height:100px;
+  top:60px;
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    padding: 4rem 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .app {
+    padding: 4rem 1rem;
+  }
+} 
+
+.app {
+  font-family:'Times New Roman', Times, serif;
+  margin:150px auto; 
+  width: 300px;
+  border: 8px solid #466eb2;
+  border-radius: 12px;
+  color: #F02262;
+  padding: 30px;
+  box-shadow: 8px 8px 8px whitesmoke;
+  position: relative;
+  overflow:hidden;
+  display: block;
+}
+
+.app,.app::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.app::before,
+.app::after {
+  background-color: #00D8FF;
+  content: '';
+  position:absolute;
+  z-index: -1;
+}
+
+.app:hover {
+  color: #a83abe;
+}
+
+.app::after {
+  height: 100%;
+  left: -90%;
+  top:0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+}
+
+.app:hover:after {
+  height: 100%;
+  width: 200%;
+} 
