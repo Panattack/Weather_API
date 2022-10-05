@@ -19,7 +19,7 @@ To make this little project become reality,you need to:
 - templates
 > This folder keeps the html file that will be rendered in views.py
 
-### Implementation 🧰
+### Implementation/Summary 🧰📜
 #### testsite
 - settings.py 🛠️
 1. First in installed apps add '~~nameofyourapp~~.apps.MainConfig'
